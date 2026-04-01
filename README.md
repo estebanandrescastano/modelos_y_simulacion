@@ -10,7 +10,6 @@ El objetivo principal es entrenar un modelo funcional que emita predicciones sob
 * **fase-1/**: Directorio que contiene el Notebook principal.
 * **01_modelo_predictivo_heart_disease.ipynb**: Notebook con el análisis de datos, entrenamiento del modelo y generación de resultados.
 * **requirements.txt**: Listado de librerías necesarias para asegurar la reproducibilidad.
-
 ---
 
 ## 🚀 Instrucciones de Ejecución Paso a Paso
@@ -23,29 +22,41 @@ git clone https://github.com/estebanandrescastano/modelos_y_simulacion
 cd modelos_y_simulacion
 ```
 
-### 2. Configurar el entorno de Python
+### 2. Configuración de Datos (Kaggle):
+Debido al tamaño de los archivos de datos, estos no se encuentran incluidos directamente en este repositorio. Para ejecutar los notebooks y scripts de entrenamiento, es necesario descargar los datasets oficiales de la competición.
+
+#### Pasos para descargar los datos:
+
+1. Visita la página de la competición en Kaggle: [Data](https://www.kaggle.com/competitions/playground-series-s6e2/data).
+2. Descarga los siguientes archivos:
+   - `train.csv`
+   - `test.csv`
+   - `sample_submission.csv`
+3. Coloca los archivos descargados en la carpeta fase-1.
+
+### 3. Configurar el entorno de Python
 Se recomienda el uso de un entorno virtual para evitar conflictos de versiones:
 
 #### Crear el entorno
 ```bash
 python -m venv venv
 ```
-#### Activar el entorno (Windows)
+#### Activar el entorno (En Windows)
 ```bash
 venv\Scripts\activate
 ```
-#### Activar el entorno (Linux/Mac)
+#### Activar el entorno (O en Linux/Mac)
 ```bash
 source venv/bin/activate
 ```
 
-### 3. Instalar dependencias
+### 4. Instalar dependencias
 Este paso es fundamental para que el Notebook funcione sin errores de "ModuleNotFound":
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Ejecución del Notebook
+### 5. Ejecución del Notebook
 1. Inicie el servidor de Jupyter:
 
 ```bash
@@ -56,7 +67,7 @@ jupyter notebook
 
 3. Abra el archivo `01_modelo_predictivo_heart_disease.ipynb`.
 
-4. Seleccione **Cell > Run All** en el menú superior para ejecutar todo el flujo de trabajo.
+4. Seleccione la pestaña **Run > Run All Cells** en el menú superior para ejecutar todo el flujo de trabajo.
 
 ---
 
