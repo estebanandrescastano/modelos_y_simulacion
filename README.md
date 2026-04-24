@@ -9,9 +9,9 @@ El objetivo principal es entrenar un modelo funcional que emita predicciones sob
 
 Selecciona una fase para ir directamente a las instrucciones:
 
-[Fase 1](https://github.com/estebanandrescastano/modelos_y_simulacion/edit/main/README.md#-instrucciones-de-ejecuci%C3%B3n-paso-a-paso---fase-1)
+[Fase 1](https://github.com/estebanandrescastano/modelos_y_simulacion#-instrucciones-de-ejecuci%C3%B3n-paso-a-paso---fase-1)
 
-[Fase 2](https://github.com/estebanandrescastano/modelos_y_simulacion/edit/main/README.md#-instrucciones-de-ejecuci%C3%B3n-paso-a-paso---fase-2)
+[Fase 2](https://github.com/estebanandrescastano/modelos_y_simulacion#-instrucciones-de-ejecuci%C3%B3n-paso-a-paso---fase-2)
 
 ---
 
