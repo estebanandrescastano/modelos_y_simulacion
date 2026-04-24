@@ -5,6 +5,15 @@ Este proyecto corresponde a la primera etapa de desarrollo de un modelo predicti
 El objetivo principal es entrenar un modelo funcional que emita predicciones sobre la presencia de patologías cardíacas basándose en datos clínicos.
 
 ---
+## 📍 Menú de Navegación
+
+Selecciona una fase para ir directamente a las instrucciones:
+
+[Fase 1](https://github.com/estebanandrescastano/modelos_y_simulacion/edit/main/README.md#-instrucciones-de-ejecuci%C3%B3n-paso-a-paso---fase-1)
+
+[Fase 2](https://github.com/estebanandrescastano/modelos_y_simulacion/edit/main/README.md#-instrucciones-de-ejecuci%C3%B3n-paso-a-paso---fase-2)
+
+---
 
 ## 📂 Contenido de la Entrega
 * **fase-1/**: Directorio que contiene el Notebook principal.
@@ -114,7 +123,9 @@ docker run -v "$(pwd):/app" heart-disease-app sh -c "python train.py && python p
 ```
 > [!NOTE]
 > ¿Qué hace este comando?
+>
 > `-v "${PWD}:/app"`: Crea un volumen que vincula su carpeta actual con la del contenedor. Esto permite que los archivos generados (`model.joblib` y `predictions.csv`) aparezcan en su carpeta local.
+>
 > `sh -c "..."`: Ejecuta ambos scripts en una sola sesión. Primero entrena el modelo y luego genera las predicciones.
 
 ### 3. Verificación de Resultados
@@ -124,4 +135,4 @@ Tras la ejecución, encontrará en su carpeta `fase-2/`:
 
 `predictions.csv`: Un archivo con las predicciones generadas para el conjunto de test.
 
-Desarrollado por: **Esteban Andrés Castaño Gallo** y **Cristian Echeverry**.
+## Desarrollado por: **Esteban Andrés Castaño Gallo** y **Cristian Echeverry**.
