@@ -1,4 +1,4 @@
-# Predicción de Enfermedades Cardíacas - Fase 1
+# Predicción de Enfermedades Cardíacas
 
 Este proyecto corresponde a la primera etapa de desarrollo de un modelo predictivo basado en la competición de Kaggle: [Predicting Heart Disease](https://www.kaggle.com/competitions/playground-series-s6e2).
 
@@ -10,9 +10,10 @@ El objetivo principal es entrenar un modelo funcional que emita predicciones sob
 * **fase-1/**: Directorio que contiene el Notebook principal.
 * **01_modelo_predictivo_heart_disease.ipynb**: Notebook con el análisis de datos, entrenamiento del modelo y generación de resultados.
 * **requirements.txt**: Listado de librerías necesarias para asegurar la reproducibilidad.
+* **fase-2/**: Directorio que contiene los archivos Dockerfile, predict.py y train.py.
 ---
 
-## 🚀 Instrucciones de Ejecución Paso a Paso
+## 🚀 Instrucciones de Ejecución Paso a Paso - Fase 1
 
 Para ejecutar este proyecto correctamente, siga estas instrucciones en su entorno local:
 
@@ -81,5 +82,9 @@ El código está organizado en las siguientes secciones documentadas:
 3. Entrenamiento: Implementación de un modelo de Regresión Logística.
 
 4. Resultados: Generación del archivo `submission.csv` y exportación del modelo `model.joblib`.
+
+---
+
+## 🚀 Instrucciones de Ejecución Paso a Paso - Fase 2:
 
 Desarrollado por: Esteban Andrés Castaño Gallo y Cristian Echeverry.
