@@ -92,29 +92,30 @@ En esta fase, el modelo se ha estructurado en scripts independientes para permit
 1. Tener **Docker** instalado y en ejecución.
 2. Asegurarse de que los archivos `train.csv`, `test.csv` y duplicar el archivo que está en la raiz que se llama `requirements.txt`, estén dentro de la carpeta `fase-2/` en su equipo local para el correcto funcionamiento de Docker.
 
-### 1. Construcción de la Imagen
-Desde la raíz del repositorio, ejecute el siguiente comando para construir la imagen del contenedor:
+### 1. Construir la Imagen
+Desde la carpeta `fase-2/`, ejecute:
+
 ```bash
-cd fase-2
 docker build -t heart-disease-app .
 ```
-### 2. Verificación de la Imagen
-Para confirmar que la imagen existe, usa:
-```bash
-docker images
-```
-### 3. Entrenamiento del Modelo (train.py)
-Para ejecutar el script de entrenamiento dentro del contenedor y actualizar el modelo:
+
+### 2. Ejecución Completa con Persistencia de Datos
+Para entrenar el modelo, generar predicciones y guardar los resultados en su computadora, ejecute el siguiente comando:
 
 ```bash
-docker run heart-disease-app python train.py
+docker run -v "${PWD}:/app" heart-disease-app sh -c "python train.py && python predict.py"
 ```
 
-### 4. Generación de Predicciones (predict.py)
-Para ejecutar el script de predicción y visualizar los resultados en consola:
+¿Qué hace este comando?
+`-v "${PWD}:/app"`: Crea un volumen que vincula su carpeta actual con la del contenedor. Esto permite que los archivos generados (`model.joblib` y `predictions.csv`) aparezcan en su carpeta local.
 
-```bash
-docker run heart-disease-app python predict.py
-```
+`sh -c "..."`: Ejecuta ambos scripts en una sola sesión. Primero entrena el modelo y luego genera las predicciones.
+
+### 3. Verificación de Resultados
+Tras la ejecución, encontrará en su carpeta `fase-2/`:
+
+`model.joblib`: El modelo entrenado y listo para producción.
+
+`predictions.csv`: Un archivo con las predicciones generadas para el conjunto de test.
 
 Desarrollado por: Esteban Andrés Castaño Gallo y Cristian Echeverry.
