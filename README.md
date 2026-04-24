@@ -98,14 +98,19 @@ Desde la raíz del repositorio, ejecute el siguiente comando para construir la i
 cd fase-2
 docker build -t heart-disease-app .
 ```
-### 2. Entrenamiento del Modelo (train.py)
+### 2. Verificación de la Imagen
+Para confirmar que la imagen existe, usa:
+```bash
+docker images
+```
+### 3. Entrenamiento del Modelo (train.py)
 Para ejecutar el script de entrenamiento dentro del contenedor y actualizar el modelo:
 
 ```bash
 docker run heart-disease-app python train.py
 ```
 
-### 3. Generación de Predicciones (predict.py)
+### 4. Generación de Predicciones (predict.py)
 Para ejecutar el script de predicción y visualizar los resultados en consola:
 
 ```bash
