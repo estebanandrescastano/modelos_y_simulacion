@@ -8,9 +8,9 @@ El objetivo principal es entrenar un modelo funcional que emita predicciones sob
 
 ## 📂 Contenido de la Entrega
 * **fase-1/**: Directorio que contiene el Notebook principal.
-* **01_modelo_predictivo_heart_disease.ipynb**: Notebook con el análisis de datos, entrenamiento del modelo y generación de resultados.
-* **requirements.txt**: Listado de librerías necesarias para asegurar la reproducibilidad.
 * **fase-2/**: Directorio que contiene los archivos Dockerfile, predict.py y train.py.
+* **requirements.txt**: Listado de librerías necesarias para asegurar la reproducibilidad.
+
 ---
 
 ## 🚀 Instrucciones de Ejecución Paso a Paso - Fase 1
