@@ -86,5 +86,30 @@ El código está organizado en las siguientes secciones documentadas:
 ---
 
 ## 🚀 Instrucciones de Ejecución Paso a Paso - Fase 2:
+En esta fase, el modelo se ha estructurado en scripts independientes para permitir su ejecución y re-entrenamiento dentro de un entorno aislado.
+
+### Requisitos Fase 2
+1. Tener **Docker** instalado y en ejecución.
+2. Asegurarse de que los archivos `train.csv` y `test.csv` estén dentro de la carpeta `fase-2/` en su equipo local.
+
+### 1. Construcción de la Imagen
+Desde la raíz del repositorio, ejecute el siguiente comando para construir la imagen del contenedor:
+```bash
+cd fase-2
+docker build -t heart-disease-app .
+```
+### 2. Entrenamiento del Modelo (train.py)
+Para ejecutar el script de entrenamiento dentro del contenedor y actualizar el modelo:
+
+```bash
+docker run heart-disease-app python train.py
+```
+
+### 3. Generación de Predicciones (predict.py)
+Para ejecutar el script de predicción y visualizar los resultados en consola:
+
+```bash
+docker run heart-disease-app python predict.py
+```
 
 Desarrollado por: Esteban Andrés Castaño Gallo y Cristian Echeverry.
