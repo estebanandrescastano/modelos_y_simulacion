@@ -92,6 +92,8 @@ El código está organizado en las siguientes secciones documentadas:
 
 4. Resultados: Generación del archivo `submission.csv` y exportación del modelo `model.joblib`.
 
+[Volver al menú ⬆](https://github.com/estebanandrescastano/modelos_y_simulacion#-men%C3%BA-de-navegaci%C3%B3n)
+
 ---
 
 ## 🚀 Instrucciones de Ejecución Paso a Paso - Fase 2:
@@ -134,5 +136,9 @@ Tras la ejecución, encontrará en su carpeta `fase-2/`:
 `model.joblib`: El modelo entrenado y listo para producción.
 
 `predictions.csv`: Un archivo con las predicciones generadas para el conjunto de test.
+
+[Volver al menú ⬆](https://github.com/estebanandrescastano/modelos_y_simulacion#-men%C3%BA-de-navegaci%C3%B3n)
+
+---
 
 ## Desarrollado por: **Esteban Andrés Castaño Gallo** y **Cristian Echeverry**.
