@@ -1,6 +1,6 @@
 # Predicción de Enfermedades Cardíacas
 
-Este proyecto corresponde a la primera etapa de desarrollo de un modelo predictivo basado en la competición de Kaggle: [Predicting Heart Disease](https://www.kaggle.com/competitions/playground-series-s6e2).
+Este proyecto corresponde al desarrollo de un modelo predictivo basado en la competición de Kaggle: [Predicting Heart Disease](https://www.kaggle.com/competitions/playground-series-s6e2).
 
 El objetivo principal es entrenar un modelo funcional que emita predicciones sobre la presencia de patologías cardíacas basándose en datos clínicos.
 
