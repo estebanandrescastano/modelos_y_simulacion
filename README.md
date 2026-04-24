@@ -90,7 +90,7 @@ En esta fase, el modelo se ha estructurado en scripts independientes para permit
 
 ### Requisitos Fase 2
 1. Tener **Docker** instalado y en ejecución.
-2. Asegurarse de que los archivos `train.csv` y `test.csv` estén dentro de la carpeta `fase-2/` en su equipo local.
+2. Asegurarse de que los archivos `train.csv`, `test.csv` y duplicar el archivo que está en la raiz que se llama `requirements.txt`, estén dentro de la carpeta `fase-2/` en su equipo local para el correcto funcionamiento de Docker.
 
 ### 1. Construcción de la Imagen
 Desde la raíz del repositorio, ejecute el siguiente comando para construir la imagen del contenedor:
