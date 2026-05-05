@@ -167,7 +167,7 @@ En esta fase, el modelo se despliega como un servicio web accesible mediante pet
 >
 > - **requirements.txt**: Archivo con las librerías necesarias (incluyendo Flask/FastAPI y Requests).
 >
-> - **Datos y Artefactos**:
+>  **Datos y Artefactos**:
 >
 > - **model.joblib**: El modelo entrenado necesario para que la API responda.
 > 
