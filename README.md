@@ -13,6 +13,8 @@ Selecciona una fase para ir directamente a las instrucciones:
 
 [Fase 2](https://github.com/estebanandrescastano/modelos_y_simulacion#-instrucciones-de-ejecuci%C3%B3n-paso-a-paso---fase-2)
 
+[Fase 3](https://github.com/estebanandrescastano/modelos_y_simulacion#-instrucciones-de-ejecuci%C3%B3n-paso-a-paso---fase-3)
+
 ---
 
 ## 📂 Contenido de la Entrega
@@ -138,6 +140,27 @@ Tras la ejecución, encontrará en su carpeta `fase-2/`:
 `predictions.csv`: Un archivo con las predicciones generadas para el conjunto de test.
 
 [Volver al menú ⬆](https://github.com/estebanandrescastano/modelos_y_simulacion#-men%C3%BA-de-navegaci%C3%B3n)
+
+---
+
+## 🚀 Instrucciones de Ejecución Paso a Paso - Fase 3
+
+En esta fase, el modelo se despliega como un servicio web accesible mediante peticiones HTTP.
+
+### 1. Construir la Imagen de la API
+```bash
+cd fase-3
+docker build -t heart-disease-api .
+```
+### 2. Ejecutar el Contenedor de la API
+```bash
+docker run -p 5000:5000 heart-disease-api
+```
+### 3. Probar la API con el Cliente
+En otra terminal (mientras la API sigue corriendo), ejecuta:
+```bash
+python client.py
+```
 
 ---
 
