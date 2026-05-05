@@ -187,6 +187,7 @@ En otra terminal (mientras la API sigue corriendo), ejecuta:
 ```bash
 python client.py
 ```
+Nota: El cliente requiere la librería requests (pip install requests).
 
 ---
 
