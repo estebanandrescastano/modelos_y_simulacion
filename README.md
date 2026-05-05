@@ -147,6 +147,32 @@ Tras la ejecución, encontrará en su carpeta `fase-2/`:
 
 En esta fase, el modelo se despliega como un servicio web accesible mediante peticiones HTTP.
 
+> [!IMPORTANT]
+> ### Requisitos fase 3
+> Para que esta fase funcione, la carpeta fase-3/ debe contener:
+>
+> **Scripts de Lógica**:
+>
+> - **apirest.py**: El servidor que expone el modelo como API REST (Nuevo).
+>
+> - **client.py**: El script para probar la API programáticamente (Nuevo).
+>
+> - **train.py**: Script para re-entrenar el modelo (Reutilizado de Fase 2).
+>
+> - **predict.py**: Script para predicciones por lotes (Reutilizado de Fase 2).
+>
+> **Configuración y Entorno**:
+>
+> - **Dockerfile**: Nuevo archivo que extiende la configuración anterior para el API (Nuevo).
+>
+> - **requirements.txt**: Archivo con las librerías necesarias (incluyendo Flask/FastAPI y Requests).
+>
+> - **Datos y Artefactos**:
+>
+> - **model.joblib**: El modelo entrenado necesario para que la API responda.
+> 
+> - **train.csv y test.csv**: Datos necesarios para ejecutar los scripts de entrenamiento y prueba.
+
 ### 1. Construir la Imagen de la API
 ```bash
 cd fase-3
